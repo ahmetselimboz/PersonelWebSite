@@ -8,9 +8,13 @@
 
 :root {
   --white: #f1f1f1;
+  --white-faded: #f1f1f179;
   --black: #090110;
+  --black-faded: #09011079;
   --gray: #5e5e5e;
+  --gray-faded: #5e5e5e79;
   --purple: #470089;
+  --purple-faded:#47008979;
 }
 
 body {
@@ -125,4 +129,33 @@ nav{
 
 .nav-mode i:hover{
   color: var(--gray);
+}
+
+.main-panel{
+  display:flex;
+  flex-direction: row;
+}
+
+.main-text-area{
+  width: 60%;
+}
+
+.main-img-area{
+  width: 40%;
+}
+
+.main-img{
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.main-img img{
+  width: 70%;
+  border-radius: 5px;
+  box-shadow: var(--black-faded) 15px 15px 10px 5px;
+}
+.main-img img:hover{
+  width: 70%;
+  border-radius: 5px;
+  box-shadow: var(--black) 15px 15px 10px 5px;
 }
