@@ -137,6 +137,7 @@ nav {
 
 .main-text-area {
   width: 60%;
+  margin-left: 2.5rem;
 }
 
 .main-text {
@@ -147,7 +148,7 @@ nav {
   height: 85%;
 }
 
-.main-title-area{
+.main-title-area {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -160,20 +161,22 @@ nav {
   font-size: 64px;
 }
 
-.main-title-img{
+.main-title-img {
   width: 20%;
-  margin: .5rem 3rem;
-
-}
-
-.main-title-img img{
-  width: 100%;
+  margin: 0.5rem 0rem;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   border: 2px solid var(--purple);
   box-shadow: #09011044 0 0 10px 5px;
+  overflow: hidden;
 }
 
-
+.main-title-img img {
+  width: 100%;
+  transform: translate(-70px, 22px) scale(2);
+  
+}
 
 .main-text h3 {
   color: var(--black);
