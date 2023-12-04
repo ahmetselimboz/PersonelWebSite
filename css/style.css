@@ -389,6 +389,11 @@ nav {
   .main-img:hover {
     box-shadow: #09011055 0px 10px 10px 5px;
   }
+
+  .main-img-img {
+
+    transform: scale(1.02);
+}
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
 }
