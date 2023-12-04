@@ -5,11 +5,13 @@ let navLogo = document.querySelector(".nav-logo a");
 let maintitleh4 = document.querySelector(".main-title-area h4");
 let maintexth3 = document.querySelector(".main-text h3");
 let maintexth6 = document.querySelector(".main-text h6");
+let menuu = document.querySelector("#menu");
 
 document.querySelector("#sun").addEventListener("click", () => {
   if (icon.className == "bx bx-sun") {
     icon.className = "bx bx-moon";
     body.style.backgroundColor = "var(--black)";
+    body.classList.toggle('background')
     icon.style.color = "var(--white)";
     navLogo.style.color = "var(--white)";
     navLink.forEach((item) => {
@@ -18,9 +20,10 @@ document.querySelector("#sun").addEventListener("click", () => {
     maintitleh4.style.webkitTextStrokeColor = "var(--white)";
     maintexth3.style.color = "var(--white)";
     maintexth6.style.color = "var(--white)";
+    menuu.style.color = "var(--white)";
   } else {
     icon.className = "bx bx-sun";
-    body.style.backgroundColor = "var(--white)";
+    body.classList.toggle('background')
     icon.style.color = "var(--black)";
     navLogo.style.color = "var(--black)";
     navLink.forEach((item) => {
@@ -29,6 +32,7 @@ document.querySelector("#sun").addEventListener("click", () => {
     maintitleh4.style.webkitTextStrokeColor = "var(--black)";
     maintexth3.style.color = "var(--black)";
     maintexth6.style.color = "var(--black)";
+    menuu.style.color = "var(--black)";
   }
 });
 
