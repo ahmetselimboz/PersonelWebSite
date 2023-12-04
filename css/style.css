@@ -314,7 +314,7 @@ nav {
 .main-title-area h4 {
   color: transparent;
   -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: var(--black);
+  -webkit-text-stroke-color: var(--purple);
   font-size: 64px;
 }
 
@@ -345,7 +345,7 @@ nav {
   width: 70%;
   font-weight: 400;
   margin: 0.5rem 0;
-  color: var(--black);
+  color: var(--gray);
 }
 
 .main-img-area {
