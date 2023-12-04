@@ -218,8 +218,34 @@ nav {
   cursor: pointer;
   display: none;
 }
+.res-nav-panel{
+  background-color: var(--white);
+  width: fit-content;
+  position: absolute;
+  right: 13%;
+  padding: 1rem 2rem;
+  transform: translate(0px,-20px);
+  z-index: 50;
+  border-radius: 5px;
+  box-shadow: #47008952 0 0 10px 5px;
+  display: none;
+}
+
+.res-nav-link {
+  font-family: "Poppins", sans-serif;
+  /* padding: 0 2rem; */
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--black);
+  transition: 0.2s ease-in-out;
+}
+
+.res-nav-toggle{
+  display: block;
+}
 
 @media screen and (max-width: 480px) {
+  
   #menu {
     display: block;
     padding: 0 1rem;

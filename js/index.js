@@ -1,12 +1,12 @@
 let body = document.querySelector("body");
 let navLink = document.querySelectorAll(".nav-link");
-let icon = document.querySelector(".nav-mode i");
+let icon = document.querySelector("#sun");
 let navLogo = document.querySelector(".nav-logo a");
 let maintitleh4 = document.querySelector(".main-title-area h4");
 let maintexth3 = document.querySelector(".main-text h3");
 let maintexth6 = document.querySelector(".main-text h6");
 
-document.querySelector(".nav-mode").addEventListener("click", () => {
+document.querySelector("#sun").addEventListener("click", () => {
   if (icon.className == "bx bx-sun") {
     icon.className = "bx bx-moon";
     body.style.backgroundColor = "var(--black)";
@@ -73,3 +73,13 @@ const handleScrollAnimation = () => {
 window.addEventListener("scroll", () => {
   handleScrollAnimation();
 });
+
+
+const menu = document.querySelector("#menu");
+const navPanel = document.querySelector(".res-nav-panel");
+
+menu.addEventListener("click", ()=>{
+  navPanel.classList.toggle("res-nav-toggle");
+})
+
+
