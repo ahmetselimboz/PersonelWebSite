@@ -80,6 +80,14 @@ const navPanel = document.querySelector(".res-nav-panel");
 
 menu.addEventListener("click", ()=>{
   navPanel.classList.toggle("res-nav-toggle");
+  menu.classList.toggle("res-nav-color");
+  console.log(menu.className);
+if (menu.className == "bx bx-menu res-nav-color") {
+  menu.className = "bx bx-x res-nav-color"
+}else{
+  menu.className = "bx bx-menu"
+}
+  
 })
 
 

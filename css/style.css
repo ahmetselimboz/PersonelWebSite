@@ -199,6 +199,7 @@ nav {
 .nav-mode {
   margin-right: 40px;
   display: flex;
+  align-items: center;
 }
 
 .nav-mode i {
@@ -240,8 +241,16 @@ nav {
   transition: 0.2s ease-in-out;
 }
 
+.res-nav-color{
+  color: var(--purple) !important;
+}
+
 .res-nav-toggle{
   display: block;
+}
+
+.bx-x{
+  font-size: 30px !important;
 }
 
 @media screen and (max-width: 480px) {
