@@ -115,6 +115,11 @@ const ratings = document.querySelectorAll(".rating");
 ratings.forEach((rating) => {
   // Get content and get score as an int
   const ratingContent = rating.innerHTML;
+
+//   var yuzdeIndex = ratingHTML.indexOf('%'); // "%" karakterinin indeksini bul
+// var ratingContent = ratingHTML.slice(yuzdeIndex + 1);
+
+
   const ratingScore = parseInt(ratingContent, 10);
 
   // Define if the score is good, meh or bad according to its value
