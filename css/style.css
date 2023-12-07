@@ -859,14 +859,14 @@ nav {
   .exp-text-area h6 {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    font-size: 8px;
+    font-size: 10px;
     color: var(--gray);
   }
   
   .exp-text-area h2 {
     font-family: "Poppins", sans-serif;
     font-weight: 800;
-    font-size: 15px;
+    font-size: 20px;
     color: var(--black);
   }
   .exp-text-area h4 {
@@ -897,6 +897,11 @@ nav {
   .exp-text-area a:hover {
     border-bottom: 2px solid #470089;
   }
+
+  .exp-text-area {
+    width: 60%;
+    margin: 0 auto;
+}
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
 }
