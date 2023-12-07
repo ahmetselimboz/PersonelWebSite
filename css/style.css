@@ -686,10 +686,10 @@ nav {
   }
 
   .work-btn a {
-    font-size: 18px;
-    border: 3px solid #470089;
+    font-size: 14px;
+    border: 2px solid #470089;
     border-radius: 10px;
-    padding: 0.8rem;
+    padding: .5rem 0.8rem;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -732,16 +732,15 @@ nav {
 }
 
 .exp-img-area {
-  width: 150px;
+}
+
+.exp-img {
+  min-width: 150px;
   height: 150px;
   border-radius: 50%;
   overflow: hidden;
   margin: 0 1rem;
   box-shadow: #00000036 0 0 10px 3px;
-}
-
-.exp-img {
-  width: 100%;
 }
 
 .exp-text-area {
@@ -831,16 +830,73 @@ nav {
     flex-direction: column;
     align-items: center;
     margin: 4rem 0rem;
-}
+  }
 
-.exp-line {
-  width: 4%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  display: none;
-}
+  .exp-line {
+    width: 4%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+
+  .exp-img {
+    min-width: 100px;
+    height: 100px;
+
+  }
+
+  .exp-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    margin:1rem 0;
+  }
+
+  .exp-text-area h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 8px;
+    color: var(--gray);
+  }
+  
+  .exp-text-area h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    color: var(--black);
+  }
+  .exp-text-area h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--gray);
+  }
+  
+  .exp-text-area a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--purple);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.5rem 0;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in-out;
+    width: fit-content;
+  }
+  
+  #exp-icon {
+    font-size: 20px;
+  }
+  
+  .exp-text-area a:hover {
+    border-bottom: 2px solid #470089;
+  }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
 }
@@ -1269,9 +1325,9 @@ nav {
   padding: 1rem 0;
 }
 
-#footer-line{
+#footer-line {
   display: none;
-  margin:1rem;
+  margin: 1rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -1289,7 +1345,6 @@ nav {
     align-items: center;
     margin: 1rem 0;
   }
-
 
   .footer-info-box {
     display: flex;
@@ -1311,7 +1366,7 @@ nav {
   .social-icon {
     color: #470089;
     font-size: 32px;
-    padding: .5rem;
+    padding: 0.5rem;
     transform: translate(0, 0);
     transition: 0.2s ease-in-out;
     border: 2px solid #470089;
@@ -1329,10 +1384,9 @@ nav {
     transform: translate(0, -5px);
   }
 
-  
-#footer-line{
-  display: block;
-}
+  #footer-line {
+    display: block;
+  }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
 }
