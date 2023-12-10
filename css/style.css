@@ -278,6 +278,14 @@ nav {
     margin-right: 15px;
     display: flex;
   }
+
+  .background {
+    background: url("../assets/40.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+  }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
 }
@@ -918,8 +926,6 @@ nav {
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #470089;
   }
-
-
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
 }
@@ -1214,6 +1220,187 @@ nav {
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
 }
 
+.ref-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 4rem 8rem;
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 500px;
+}
+
+.carousel-item {
+  min-width: 100%;
+  margin: 0 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-item img {
+  width: 100%;
+  pointer-events: none;
+}
+
+.ref-card {
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e2e2e2;
+  border-radius: 5px;
+  height: 450px;
+  width: 600px;
+  box-shadow: #00000036 0 0 10px 5px;
+}
+
+.ref-card-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #470089;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.ref-card-img img {
+  width: 100%;
+}
+
+.ref-card-text h2 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  color: var(--black);
+}
+
+.ref-card-text h4 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--black);
+}
+
+.ref-card-text p {
+  margin: 1rem 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--gray);
+}
+.ref-card-text img {
+  width: 9%;
+  color: var(--gray);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.pagination-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination-dot.active {
+  background-color: #555;
+}
+
+.prev-button,
+.next-button {
+  color: var(--black);
+  font-size: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .ref-area {
+    margin: 3rem 0rem;
+  }
+
+  .prev-button,
+  .next-button {
+    font-size: 30px;
+  }
+
+  .ref-card {
+    padding: 2rem 1rem;
+
+    height: auto;
+    width: 80%;
+  }
+  .ref-card-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #470089;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+  }
+
+  .carousel-container {
+    padding: 1rem 0;
+  }
+
+  .ref-card-text h2 {
+    font-size: 22px;
+  }
+
+  .ref-card-text h4 {
+    font-size: 13px;
+  }
+
+  .ref-card-text p {
+    font-size: 16px;
+  }
+  .ref-card-text img {
+    width: 9%;
+    color: var(--gray);
+  }
+
+  .pagination-dot {
+    width: 7px;
+    height: 7px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .pagination {
+    margin-top: 0px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+}
+
 .footer {
   display: flex;
   flex-direction: row;
@@ -1281,7 +1468,7 @@ nav {
 }
 
 .footer-menu:hover {
-  color: var(--gray) !important;
+  color: var(--gray);
 }
 
 .footer-info-box {
@@ -1385,6 +1572,12 @@ nav {
     margin: 0.5rem 0;
     transition: 0.2s ease-in-out;
   }
+  .footer-logo-area h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 35px;
+    color: var(--black);
+    font-weight: 800;
+}
 
   .social-icon {
     color: #470089;
