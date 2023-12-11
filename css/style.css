@@ -414,7 +414,7 @@ nav {
   }
 
   .main-title-area h4 {
-    font-size: 35px;
+    font-size: 30px;
     margin-top: 25px;
     color: var(--black);
     -webkit-text-stroke-width: 1.5px;
@@ -423,7 +423,7 @@ nav {
   }
 
   .main-text h3 {
-    font-size: 40px;
+    font-size: 35px;
   }
   .main-text h6 {
     font-size: 20px;
@@ -1577,7 +1577,7 @@ nav {
     font-size: 35px;
     color: var(--black);
     font-weight: 800;
-}
+  }
 
   .social-icon {
     color: #470089;
@@ -1602,6 +1602,72 @@ nav {
 
   #footer-line {
     display: block;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+}
+
+.pages-title-area {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.pages-title-area h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 56px;
+  color: var(--purple);
+}
+
+.pages-title-area p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--black);
+  width: 60%;
+  margin: 0 auto;
+}
+
+.section-title {
+  margin: 0rem 9rem;
+  width: fit-content;
+}
+.section-title h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  color: var(--purple);
+  margin: 0.1rem 0rem;
+}
+.section-title-line {
+  border: none;
+  border-top: 0.2rem solid var(--purple);
+  width: initial;
+  border-radius: 10px;
+  margin: 0rem 0rem;
+}
+@media screen and (max-width: 480px) {
+  .section-title {
+    margin: 0rem 0rem;
+    width: fit-content;
+  }
+
+  .pages-title-area h4 {
+    font-size: 50px;
+  }
+
+  .pages-title-area p {
+    font-size: 18px;
+    width: 90%;
+  }
+
+  .section-title h3 {
+    font-size: 30px;
+    margin: 0.1rem 0rem;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
