@@ -2000,7 +2000,7 @@ nav {
   .work-detail-text-area h2 {
     font-size: 40px;
 
-    margin: .5rem 0;
+    margin: 0.5rem 0;
   }
   .work-detail-text-area p {
     font-size: 18px;
@@ -2035,7 +2035,6 @@ nav {
     margin: 3rem 0rem;
   }
   .work-detail-desc h1 {
-
     font-size: 18px;
 
     width: 100%;
@@ -2047,4 +2046,67 @@ nav {
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 }
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
+}
+
+.blog-panel {
+  margin: 1rem 0;
+  padding: 2rem 1rem;
+}
+
+.blog-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-tag {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  margin: 0.5rem auto;
+}
+
+.blog-tag a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--gray);
+  margin: 0 0.5rem;
+  transition: 0.2s ease-in-out;
+  background-color: #ececec;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+}
+
+.blog-tag a:hover {
+  background-color: #dcdcdc;
+  color: var(--purple);
+}
+
+.blog-title h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 56px;
+  color: var(--purple);
+  width: 60%;
+  margin: 0.5rem auto;
+}
+
+.blog-letter h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  width: 60%;
+  color: var(--gray);
+  margin: 0.5rem auto;
+}
+
+.blog-main-img{
+  width: 50%;
+  margin: 2rem auto;
+  border-radius: 5px;
+  box-shadow: #00000036 0 0 10px 5px;
+  overflow: hidden;
+}
+.blog-main-img img{
+  width: 100%;
 }
